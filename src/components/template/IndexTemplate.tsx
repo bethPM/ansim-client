@@ -127,6 +127,7 @@ const IndexTemplate = () => {
           </div>
           <KakaoMap>
             <MapMarker
+              image={{ src: "/Group2085.png", size: { width: 29, height: 42 } }}
               draggable={true}
               onMouseOver={() => {
                 setIsMouseOver(true);
@@ -146,10 +147,8 @@ const IndexTemplate = () => {
                 lng: geo.lng,
               }}
             >
-              <div>
-                {isMouseOver
-                  ? "여기가 아닌가요? 드래그해서 이동시켜주세요!"
-                  : "여기에 있어요!"}
+              <div style={{ width: "152px", textAlign: "center" }}>
+                여기 있어요!
               </div>
             </MapMarker>
             {/* <MapMarker
@@ -196,12 +195,12 @@ const IndexTemplate = () => {
           <div
             style={{
               position: "absolute",
-              bottom: "5px",
-              right: "20px",
+              left: "10px",
+              bottom: "20px",
               zIndex: "100",
             }}
           >
-            <h2>자료 출처: [경찰청]</h2>
+            <h3>자료출처-[경찰청]</h3>
           </div>
         </>
       )}

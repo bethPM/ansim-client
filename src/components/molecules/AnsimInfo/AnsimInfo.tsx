@@ -24,7 +24,7 @@ const AnsimInfo = () => {
         target="blank"
         href={`http://map.naver.com/index.nhn?slng=${geo.lng}&slat=${geo.lat}&stext=출발&elng=${ansimInfo.lcinfoLo}&elat=${ansimInfo.lcinfoLa}&pathType=0&showMap=true&etext=${ansimInfo.adres}&menu=route`}
       >
-        길찾기
+        최적이동경로
       </a>
     </div>
   );
