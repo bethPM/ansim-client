@@ -147,9 +147,9 @@ const IndexTemplate = () => {
                 lng: geo.lng,
               }}
             >
-              <div style={{ width: "152px", textAlign: "center" }}>
-                여기 있어요!
-              </div>
+              <div style={{ width: "220px", textAlign: "center" }}>
+                여기있어요!<br/>(현재위치를 이동시킬수있어요!)
+      </div>
             </MapMarker>
             {/* <MapMarker
               position={{
